@@ -1,5 +1,6 @@
 from prefect import flow
 from prefect.events import DeploymentEventTrigger
+from prefect.events.schemas import ResourceSpecification
 
 
 @flow
