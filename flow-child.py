@@ -22,7 +22,7 @@ if __name__ == "__main__":
                 match={"prefect.resource.id": "prefect.flow-run.*"},
                 match_related=[
                     {
-                        "prefect.resource.name": "toto-deployement",
+                        "prefect.resource.name": "parent-deployement",
                         "prefect.resource.role": "deployment",
                     }
                 ],
