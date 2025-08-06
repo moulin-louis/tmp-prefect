@@ -12,7 +12,7 @@ if __name__ == "__main__":
         source="https://github.com/moulin-louis/tmp-prefect.git",
         entrypoint="flow-parent.py:toto"
     ).deploy(
-        name="parent-flow",
+        name="parent-deployement",
         work_pool_name="test-work-pool",
         cron="*/5 * * * *",
     )
