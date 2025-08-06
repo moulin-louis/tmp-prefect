@@ -18,14 +18,14 @@ if __name__ == "__main__":
         triggers=[
             DeploymentEventTrigger(
                 name="toto-succeeded-trigger",
-                expect={"prefect.flow-run.Completed"},
                 match={"prefect.resource.id": "prefect.flow-run.*"},
                 match_related=[
                     {
-                        "prefect.resource.name": "parent-deployement",
-                        "prefect.resource.role": "deployment",
-                    }
+                        "prefect.resource.name": "toto",
+                        "prefect.resource.role": "flow",
+                        }
                 ],
+                expect={"prefect.flow-run.Completed"},
             )
         ],
     )
